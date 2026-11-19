@@ -140,6 +140,10 @@ n8n-ai-agent/
     └── save-memory.json
 ```
 
+## 关联项目
+
+- [Xiang Mu 本地口播视频剪辑工作台](https://github.com/z15314102792-arch/Xiang-Mu) — 独立的本地视频处理与成片导出项目。
+
 ## 项目实践
 
 负责场景拆解、Agent 工具规划、n8n 工作流设计与配置、模型及外部服务接入、知识库结构设计、异常排查和运行验收。工作流中的 JavaScript 节点与自动化逻辑结合 AI 辅助开发完成。
