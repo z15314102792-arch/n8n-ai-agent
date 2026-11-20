@@ -142,7 +142,7 @@ n8n-ai-agent/
 
 ## 关联项目
 
-- [Xiang Mu 本地口播视频剪辑工作台](https://github.com/z15314102792-arch/Xiang-Mu) — 独立的本地视频处理与成片导出项目。
+- [Xiang Mu 本地口播视频剪辑工作台](https://github.com/z15314102792-arch/video-editing-tool) — 独立的本地视频处理与成片导出项目。
 
 ## 项目实践
 
