@@ -20,7 +20,7 @@
 | save-memory | memory_key、正文、类型、证据等 | Upsert 记忆记录 |
 | read-memory | 记忆查询条件 | 返回匹配的记忆记录 |
 | 读取项目进度 | project_name、limit | 返回项目进度、证据和更新时间 |
-| Agent 工具演示工作流 | a、b | 独立的结构化加法示例，不计入 Agent 1 当前已连接的生产工具 |
+| Agent 工具演示工作流 | a、b | 展示子工作流调用、参数传递和结构化计算结果 |
 
 ## 3. 知识库入库链路
 
@@ -34,7 +34,7 @@
 1. Default Data Loader（默认文档加载器）读取正文和元数据。
 2. FastEmbed 使用 `BAAI/bge-small-zh-v1.5` 生成 512 维向量。
 3. Qdrant Vector Store 将向量、正文和 metadata 写入 `agent_knowledge_prod`。
-4. Agent 1 当前通过「知识库入口」检索正式集合；别名 `agent_knowledge_native` 同样指向 `agent_knowledge_prod`。2026-11-19 已完成 2 个 Point 到 `knowledge-test-v2` 的重新 Embedding 对照迁移，但 Agent 1 尚未切换到测试集合。
+4. Agent 1 通过「知识库入口」检索正式集合；别名 `agent_knowledge_native` 同样指向 `agent_knowledge_prod`。2026-11-19 完成 2 个 Point 到 `knowledge-test-v2` 的重新 Embedding 对照迁移，正式检索继续使用 `agent_knowledge_prod`。
 
 | 参数 | 值 |
 |---|---|
